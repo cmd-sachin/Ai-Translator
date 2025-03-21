@@ -11,6 +11,8 @@
   "dependencies": {
     "@ai-sdk/google": "^1.1.27",
     "ai": "^4.1.66",
+    "elevenlabs": "^1.54.0",
+    "lucide-react": "^0.483.0",
     "next": "15.2.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
