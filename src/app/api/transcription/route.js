@@ -2,6 +2,7 @@ import { createGoogleGenerativeAI } from "@ai-sdk/google";
 import { generateObject } from "ai";
 import { z } from "zod";
 import { NextResponse } from "next/server";
+import systemPrompt from "../../prompts/trancription";
 
 const google = createGoogleGenerativeAI({ apiKey: process.env.GOOGLE_API_KEY });
 
@@ -39,6 +40,7 @@ export async function POST(request) {
         sourceLanguage: z.string(),
       }),
       messages,
+      system: systemPrompt,
       temperature: 0.2,
     });
 
