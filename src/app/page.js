@@ -424,7 +424,7 @@ export default function TranslatorPage() {
               </h3>
               <p className="text-sm text-center text-slate-600">
                 Speak clearly into your microphone and we&apos;ll capture your
-                message.
+                message.''
               </p>
             </div>
 
